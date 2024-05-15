@@ -1,0 +1,95 @@
+@import "Ginkgo";
+@import "bootstrap/bootstrap";
+
+
+* {
+  &, &:after, &:before {
+    vertical-align: middle;
+    @include box-sizing(border-box);
+    @include font-smoothing(subpixel-antialiased);
+  }
+}
+
+.ztop {
+  z-index: 1050 !important;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+  font:normal 14px/20px "新細明體";
+  font-family:"nbk", "microsoft yahei","微軟正黑體",arial,sans-serif;
+  font-family:"nbk", "微軟正黑體",arial,sans-serif;
+
+  text-size-adjust: none;
+  -webkit-text-size-adjust:none;
+
+  background-color: white;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:after, &:before {
+    vertical-align: top !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  outline: 0;
+  border-width: 0;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: $gray-500;
+  color: black;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+footer {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+hr {
+  color: $gray-500;
+  opacity: 1;
+}
+
+.box {
+  display: inline-block;
+  max-width: 1464px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 6% !important;
+}
+
+
+
+
+
+
+
